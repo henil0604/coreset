@@ -124,18 +124,18 @@ handler.getHandler = async (req, res, next) => {
     let URIs = (await handler.postRequest(`${url}`, {}, req, true)).data;
     let toSend = ``;
 
-    for (let i = 0; i < URIs.length; i++) {
-        let url = URIs[i];
-        if (handler.getExt(url) == "css") {
-            toSend += `
-                <link rel="stylesheet" href="${url}">
-            `
-        } else if (handler.getExt(url) == "js") {
-            toSend += `
-                <script src="${url}"></script>
-            `
-        }
-    }
+    // for (let i = 0; i < URIs.length; i++) {
+    //     let url = URIs[i];
+    //     if (handler.getExt(url) == "css") {
+    //         toSend += `
+    //             <link rel="stylesheet" href="${url}">
+    //         `
+    //     } else if (handler.getExt(url) == "js") {
+    //         toSend += `
+    //             <script src="${url}"></script>
+    //         `
+    //     }
+    // }
 
     res.send(toSend)
 

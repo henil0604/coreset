@@ -12,7 +12,8 @@
         "cork_theme": [
             "{bootstrap5}",
             "{jquery}",
-            "{fontawesome}"
+            "{fontawesome}",
+            "/assets/css/cork_theme/scrollspyNav.css"
         ]
     }
 }

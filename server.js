@@ -9,6 +9,7 @@ let handler = require("./node/handler");
 app.use("/assets", express.static("assets"));
 app.use("/public", express.static("public"));
 app.use("/handler.js", express.static("public/coreset.js"));
+app.use("/test.html", express.static("public/test.html"));
 app.use(cors())
 app.use(handler)
 
